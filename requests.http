@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoria": "Acessórios",
+    "nome": "Gravata",
+    "tamanho": "U",
+    "valor": "25"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/656f7889fa34d3df0a308542 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/656f52eed82e4a1593ae1775 HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoria": "roupas",
+    "nome": "Abrigo",
+    "tamanho": "S",
+    "valor": "45"
+}
+
+###
+DELETE http://localhost:9000/api/users/656f52eed82e4a1593ae1775 HTTP/1.1
